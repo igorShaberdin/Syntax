@@ -8,7 +8,6 @@ import static java.lang.Integer.MIN_VALUE;
 public class Array {
     public int[] initializeArray() {
         int[] array = new int[10];
-        Integer zero = null;
         Scanner console = new Scanner(System.in);
         for (int i = 0; i < array.length; i++) {
             array[i] = console.nextInt();
@@ -32,7 +31,11 @@ public class Array {
         for(int i = 0; i < strings.length; i++) {
             strings[i] = reader.readLine();
         }
+        for (int i = 0; i < length.length; i++) {
+            length[i] = strings[i].length();
+            System.out.println(length[i]);
+        }
 
     }
 }
-//0701-0702 bitch
+//0701-0703
