@@ -14,6 +14,15 @@ public class Array {
             }
         return array;
 }
+
+    public int[] reverseArray(int[] array) {
+        for (int i = 0; i < array.length/2; i++) {
+            int temp = array[i];
+            array[i] = array[array.length-1-i];
+            array[array.length-1-i] = temp;
+        }
+        return array;
+    }
     public int max(int[] array) {
         int max = MIN_VALUE;
         for (int j : array) {
@@ -38,4 +47,4 @@ public class Array {
 
     }
 }
-//0701-0703
+//0701-0704
