@@ -14,10 +14,11 @@ public class Main {
         int[] array1 = new int[10];
         int[] array2 = new int[10];
         System.arraycopy(array, 0, array1, 0, array1.length);
-        int j = 0;
-        for (int i = 10; i < array.length; i++, j++) {
-            array2[j] = array[i];
-            System.out.println(array2[j]);
+        for (int i = 0; i < array2.length; i++) {
+            array2[i] = array[i + array2.length];
+            System.out.println(array2[i]);
         }
+        Address howMuch = new Address();
+        howMuch.streetsAndHouses();
     }
 }
