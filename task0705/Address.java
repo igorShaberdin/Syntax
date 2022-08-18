@@ -21,5 +21,16 @@ public class Address {
         }
         String answer = odd > notOdd ? "В домах с четными номерами проживает больше жителей." : "В домах с нечетными номерами проживает больше жителей.";
         System.out.println(answer);
+
+//        int evenStreetPopulation = 0;
+//        int oddStreetPopulation = 0;
+//        for (int i = 0; i < arr.length - 1; i += 2) {
+//            evenStreetPopulation += arr[i];
+//            oddStreetPopulation += arr[i + 1];
+//        }
+//        evenStreetPopulation += arr[arr.length - 1];
+//
+//        System.out.printf("В домах с %s номерами проживает больше жителей.",
+//                evenStreetPopulation < oddStreetPopulation ? "нечетными" : "четными");
     }
 }

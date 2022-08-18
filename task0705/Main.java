@@ -3,6 +3,7 @@ package task0705;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -20,5 +21,17 @@ public class Main {
         }
         Address howMuch = new Address();
         howMuch.streetsAndHouses();
+
+        ArrayList<String> line = new ArrayList<>();
+        line.add("don't touch my straps");
+        line.add("forget about it");
+        line.add("you a nerd");
+        line.add("please would be nice");
+        line.add("you have a problem?");
+        System.out.println(line.size());
+        for(String i : line) {
+            System.out.println(i);
+        }
+
     }
 }
