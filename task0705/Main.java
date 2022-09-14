@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -21,7 +22,6 @@ public class Main {
 //        }
 //        Address howMuch = new Address();
 //        howMuch.streetsAndHouses();
-
         ArrayList<String> line = new ArrayList<>();
         line.add("don't touch my straps");
         line.add("forget about it");
@@ -37,7 +37,20 @@ public class Main {
                 index = i;
             }
         }
-            System.out.printf("index: %s, size: %s, line: %s", index, largest, line.get(index));
+           // System.out.printf("index: %s, size: %s, line: %s", index, largest, line.get(index));
         //0708
+        ArrayList<String> lines = new ArrayList<>(Arrays.asList("don't touch my straps", "you a nerd", "forget about it"));
+        //for (int i = 0; i < 5; i++) {
+        //            strings.add(reader.readLine());
+        //        }
+        int smallest = Integer.MAX_VALUE;
+        int indexs = 0;
+        for (int i = 0; i < lines.size(); i++) {
+            if(lines.get(i).length() < smallest) {
+                smallest = lines.get(i).length();
+                indexs = i;
+            }
+        }
+        System.out.println(lines.get(indexs));
     }
 }
