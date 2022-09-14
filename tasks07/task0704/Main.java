@@ -1,3 +1,7 @@
+package tasks07.task0704;
+
+import tasks07.task0704.Array;
+
 import java.io.IOException;
 
 public class Main {

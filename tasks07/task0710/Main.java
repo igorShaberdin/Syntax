@@ -1,4 +1,4 @@
-package task0711;
+package tasks07.task0710;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,15 +7,12 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         ArrayList<String> list = new ArrayList<>();
-        for(int i = 0; i < 5; i++) {
-            list.add(console.readLine());
+        for (int i = 0; i < 10; i++) {
+            list.add(0, reader.readLine());
         }
-        for(int i = 0; i < 13; i++) {
-            list.add(0, list.remove(list.size()-1));
-        }
-        for(String s : list) {
+        for (String s : list) {
             System.out.println(s);
         }
     }
