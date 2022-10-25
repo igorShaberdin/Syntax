@@ -1,4 +1,4 @@
-package tasks07.tasks0713;
+package tasks07.task0713;
 
 import java.util.ArrayList;
 

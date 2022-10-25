@@ -1,4 +1,4 @@
-package tasks07.tasks0713;
+package tasks07.task0713;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -16,17 +16,19 @@ public class Main {
             numbers.add(Integer.valueOf(console.readLine()));
 
         }
-        for (int i = 0; i < numbers.size(); i++) {
-            if ((numbers.get(i) % 2) == 0) {
-                numbers2.add(numbers.get(i));
-            } else if ((numbers.get(i) % 3) == 0) {
-                numbers3.add(numbers.get(i));
+        for (Integer number : numbers) {
+            if ((number % 2) == 0) {
+                numbers2.add(number);
+            } else if ((number % 3) == 0) {
+                numbers3.add(number);
             } else {
-                another.add(numbers.get(i));
+                another.add(number);
             }
         }
         Print num = new Print();
         num.printList(another);
+        num.printList(numbers2);
+        num.printList(numbers3);
     }
 }
 
