@@ -16,8 +16,8 @@ public class Main {
         for (int i = 0; i < n; i++) {
             list.add(console.readLine());
         }
-        for (int i = 0, a = list.size(); i < m; i++, a--) {
-            list.add(a, list.get(i));
+        for (int i = 0; i < m; i++) {
+            list.add(list.size()-1, list.remove(0));
         }
         for (String i : list) {
             System.out.println(i);
