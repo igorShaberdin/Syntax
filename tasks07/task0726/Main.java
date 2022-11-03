@@ -15,6 +15,7 @@ public class Main {
         int weight = Integer.parseInt(console.readLine());
         System.out.println("input tail");
         int tail = Integer.parseInt(console.readLine());
-        Cats cat1 = new Cats();
+        Cats cat1 = new Cats(name, age, weight, tail);
+        System.out.println(cat1);
     }
 }
