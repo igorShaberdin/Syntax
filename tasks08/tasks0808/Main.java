@@ -8,14 +8,22 @@ public class Main {
     public static void main(String[] args) {
         ArrayList list = new ArrayList();
         LinkedList list1 = new LinkedList();
+        long startTime1 = System.currentTimeMillis();
         add1(list);
+        long finishTime1 = System.currentTimeMillis();
         set(list);
         get(list);
         remove(list);
+        long startTime2 = System.currentTimeMillis();
         add1(list1);
+        long finishTime2 = System.currentTimeMillis();
         set(list1);
         get(list1);
         remove(list1);
+        long time1 = finishTime1 - startTime1;
+        long time2 = finishTime2 - startTime2;
+        System.out.printf("time arrayList is %s, time linkedList is %s",
+                time1, time2);
     }
 
     public static void add1(List list) {
