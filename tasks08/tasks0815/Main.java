@@ -1,6 +1,5 @@
 package tasks08.tasks0815;
 
-import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
@@ -15,19 +14,18 @@ public class Main {
         pairsInf(map);
     }
 
-    public static void pairsInf(Map map) {
-        int name = 0;
-        int surname = 0;
-        for (int i = 0; i < map.size(); i++) {
-            surname = Collections.frequency(map.values(), i);
-            if (surname > 0) {
-                System.out.println(surname + " " + map.values());
-            }
-            name = Collections.frequency(map.keySet(), i);
-            if (name > 0) {
-                System.out.println(name + " " + map.keySet());
-            }
+    public static void pairsInf(HashMap<String, String> map) {
+        int name = 1;
+        int surname = 1;
+        for (Map.Entry<String, String> pair : map.entrySet()) {
+            name = Collections.frequency(map.values(), pair.getValue());
+                if (name > 1) {
+                    System.out.println(name + " " + pair.getValue());
+                }
+                surname = Collections.frequency(map.keySet(), pair.getKey());
+                if (surname > 1) {
+                    System.out.println(surname + " " + pair.getKey());
+                }
         }
     }
 }
-//?
