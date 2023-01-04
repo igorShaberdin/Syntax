@@ -12,11 +12,6 @@ public class Cat {
         return set;
     }
 
-    @Override
-    public String toString() {
-        return "Cat";
-    }
-
     public static void printCat(Set<Cat> list) {
         for (Cat s : list) {
             System.out.println(s);
